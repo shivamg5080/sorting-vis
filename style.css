@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background-color:blueviolet;
+}
+header {
+  background: white;
+  padding: 20px;
+}
+
+header > h1 {
+  color: rgb(23, 24, 23);
+  text-align: center;
+}
+.input {
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+}
+.button {
+  margin-top: 20px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.randomize {
+  padding: 10px 24px;
+  margin: 20px auto;
+}
+.randomize:hover {
+  background-color: palegreen;
+  color: white;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.algorithm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.algo {
+  margin-top: 20px;
+  background-color: tomato;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bubble {
+  padding: 10px 24px;
+  margin: 20px 20px;
+}
+.bubble:hover {
+  background-color: red;
+  color: white;
+}
+.insertion {
+  padding: 10px 24px;
+  margin: 20px 20px;
+}
+.insertion:hover {
+  background-color: red;
+  color: white;
+}
+.merge {
+  padding: 10px 24px;
+  margin: 20px 20px;
+}
+.merge:hover {
+  background-color: red;
+  color: white;
+}
+.selection {
+  padding: 10px 24px;
+  margin: 20px 20px;
+}
+.selection:hover {
+  background-color: red;
+  color: white;
+}
+.quick {
+  padding: 10px 24px;
+  margin: 20px 20px;
+}
+.quick:hover {
+  background-color: red;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section #left_container {
+  padding: 20%;
+}
+
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 65vh;
+}
+
+section #right_container {
+  padding: 20%;
+}
+
+#footer {
+  color: azure;
+  font-size: 14px;
+  font-family: monospace;
+  text-align: center;
+}
+
+@media screen and (max-width: 710px) {
+  .algorithm {
+    display: flex;
+    flex-direction: column;
+  }
+  .algo {
+    margin-top: 2px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

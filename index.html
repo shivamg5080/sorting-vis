@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting Visualiser</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sorting Visualiser</h1>
+    </header>
+
+    <div class="algorithm">
+      <button onclick="Bubble()" class="algo bubble" id="bubble">Bubble</button>
+      <button onclick="Insertion()" class="algo insertion" id="insertion">
+        Insertion
+      </button>
+      <button
+        onclick="Selection_sort()"
+        class="algo selection"
+        id="selection_sort"
+      >
+        Selection
+      </button>
+      <button onclick="Merge()" class="algo merge" id="merge">Merge</button>
+      <button onclick="Quick()" class="algo quick" id="quick">Quick</button>
+    </div>
+
+    <div class="input">
+      <label for="customRange1" class="form-label">Size of the array</label>
+      <input id="size" type="range" min="20" max="100" step="1" value="60" />
+      <label for="customRange1" class="form-label">Speed of algorithm</label>
+      <input id="speed" type="range" min="1" max="5" step="1" value="3" />
+    </div>
+    <div class="center">
+      <button class="button randomize" id="randomize">Randomize Array</button>
+    </div>
+
+    <section>
+      <div id="left_container"></div>
+
+      <div id="array_container"></div>
+
+      <div id="right_container"></div>
+    </section>
+
+    <div id="footer">
+      <p>&copy Author: Shivam Gupta</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="selection.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+  </body>
+</html>
